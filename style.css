@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+body{
+    background: hsl(0, 0%, 95%);
+    margin: 7% 10%;
+    /* height: 100vh; */
+    
+}
+.cars{
+    display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.sedan,
+.suv,
+.luxury {
+	padding: 15% 10%;
+}
+
+.sedan {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+h3 {
+	font-family: "Big Shoulders Display", cursive;
+	font-weight: 700;
+	color: #fff;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+	line-height: 1.5rem;
+	font-size: 15px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+	padding: 1rem 3rem;
+	background: hsl(0, 0%, 95%);
+	border-radius: 25px;
+	border: none;
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+}
+
+#btn-sedan {
+	color: hsl(31, 77%, 52%);
+}
+
+#btn-suv {
+	color: hsl(184, 100%, 22%);
+}
+
+#btn-luxury {
+	color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 1440px) {
+	/* body{
+        margin: 0% 10%;
+    } */
+    .cars {
+		flex-direction: row;
+	}
+
+	.sedan,
+	.suv,
+	.luxury {
+		padding: 5%;
+	}
+
+	p {
+		padding-bottom: 3rem;
+	}
+}
